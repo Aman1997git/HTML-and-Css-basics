@@ -1,0 +1,258 @@
+body{	
+background-color: azure;
+font-family:sans-serif;
+		
+}
+	
+	/*navigation*/
+html{
+	scroll-behavior: smooth;
+}
+
+#navbar
+{
+	display: flex;
+	align-items: center;
+	position: sticky;
+	margin: -9px;
+}
+
+#navbar::before
+{
+	content: "";
+	background-color: black;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.5;
+
+}
+	
+	/*list styling of navbar*/
+
+ul
+{
+	display: flex;
+
+}
+ul li 
+{
+	list-style: none;
+	font-size: 1.03rem;
+}
+ ul li a{
+	letter-spacing: 1px;
+	text-decoration: none;
+	display: block;
+	padding:2px 32px;
+	color:white;
+	font-size: 0.92rem;
+	}
+	
+	/*logo*/
+	#logo img{
+		height: 60px;
+		width: 60px;
+		margin: 6px 16px;
+	}
+
+	/*starting Home section*/
+	#home{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 3px 200px;
+	height: 350px;
+	}
+	#home::before{
+	content: "";
+	background:url('food-1932466_1920.jpg')no-repeat center center/cover;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	height: 60%;
+	width: 101%;
+	z-index: -1;
+	opacity: 0.9;
+	}
+	
+	/*second section start*/	
+	.services{
+		display: flex;
+		flex-direction: column;
+		margin: 23px;
+		
+	}
+	
+	#container{
+		display: flex;
+		
+	}		
+	#container .box{
+	border: 2px solid #a2350d;
+    margin: 16px 12px;
+    background: #e6cdcc;
+    padding: 15px 22px 15px 22px;
+    border-radius: 28px;
+	}
+	.boximg{
+		height: 160px;
+		width: 200px;
+		display: block;
+		margin: auto;
+	}
+	.span{
+		color:black;
+		font-size: 0.9rem;
+	}
+
+	/*third section clients*/
+
+	#client-section::before
+	{
+		content: "";
+		background: url('pexels-ella-olsson-1640777 (1).jpg');
+		position: absolute;
+		width:100%;
+		height: 100%;
+		z-index: -1;
+		opacity: 0.4;
+	}
+	#clients{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#clients img{
+		height: 100px;
+		padding: 4px 40px;
+	}
+	
+		#client-section{
+		height: 205px;
+		position: relative;
+		}
+	/*fourth section clients*/
+	
+
+	#contact-section{
+		position: relative;
+	}
+	#contact-section::before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height:100%;
+		background: url('iphone-5381213_1280.jpg')no-repeat center center/cover;
+		z-index: -1;
+		opacity: 0.6;
+	}
+	
+			#contact-box form {
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	padding-bottom: 2rem;
+    	flex-direction: column;
+
+		}			
+		
+
+		#contact-box input{
+		width: 40%;
+		padding: 0.5rem;
+    	border-radius: 4px;
+    	border: 1px solid black;
+		}
+		
+		#contact-box textarea{
+			width: 40%;
+			padding: 0.5rem;
+			font-size: 1rem;
+			border: 2px solid black;
+		}
+		#contact-box label{
+			font-size: 1.2rem;
+			margin: 4px;
+			margin: 6px;
+		}
+
+
+	
+		/*Utility class start*/
+	
+
+		#heading{
+		font-size: 3rem;
+		color:white;
+		padding: 10px;
+		margin: 12px;
+	}
+	p{
+		color:white;
+		font-size: 1rem;
+		margin: 6px;
+	}
+
+	/*second section utility classes*/
+	h2{
+		font-size: 2rem;
+		margin-top: 3rem;
+		text-align: center;
+	
+	}
+	#button{
+
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    width: 20%;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 6px;
+    padding: 11px 5px 11px 10px;
+    font-weight: bolder;
+    background-color:#c12424;
+    border: 2px solid;
+    margin-bottom: 20px;
+}
+#button:hover{
+	border: 2px solid black;
+}
+
+	#text{
+		color:black;
+	}
+	.statment{
+		text-align: center;
+	}
+		/*third section utility classes*/
+	
+	
+	
+	#our-client{
+		text-align: center;
+		font-size: 2rem;
+		margin:0px;
+		}
+		/*fourth section utility classes*/
+	#contact-us{
+		font-size: 2rem;
+		text-align: center;
+		}
+	
+	footer{
+	text-align: center;
+	padding: 8px 12px;
+	background-color: #4a4848;
+	color: white;
+	}
+
+	@media screen (min-width: 500px)(max-width: 800px){
+		#home{
+			background-color: black;
+		}	
+	}
